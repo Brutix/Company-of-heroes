@@ -7,6 +7,7 @@ import { TemplateComponent } from './template/template.component';
 import { ViewsComponent } from './views/views.component';
 import { ButtonComponent } from './button/button.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HeroesComponent } from './heroes/heroes.component';
     ViewsComponent,
     ButtonComponent,
     HeroesComponent,
+    HeroDetailComponent,
     
   ],
   imports: [
