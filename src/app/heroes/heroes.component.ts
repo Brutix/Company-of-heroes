@@ -10,13 +10,14 @@ import { HeroService } from '../hero.service';
 })
 export class HeroesComponent implements OnInit {
 
-  heroes : Hero[] = []
+  public heroes : Hero[] = []
   
 
   
 
-  getHeroes(): void{
-    this.heroes = this.heroService.getHeroes()
+  getHeroes(): void {
+    this.heroService.getHeroes()
+        .subscribe(heroes => this.heroes = heroes);
   }
 
   selectedHero? : Hero
